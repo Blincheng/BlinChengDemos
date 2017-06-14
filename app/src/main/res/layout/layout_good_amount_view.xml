@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="110dp"
+    android:background="@drawable/shape_good_amount_view"
+    android:layout_height="30dp">
+    <ImageView
+        android:id="@+id/good_amount_sub_btn"
+        android:src="@drawable/btn_minus"
+        android:layout_width="30dp"
+        android:scaleType="center"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:id="@+id/good_amount_linear"
+        android:orientation="horizontal"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="0.1dp"
+            android:background="#CCCCCC"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/good_amount_tv"
+            android:text="1"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="0.1dp"
+            android:background="#CCCCCC"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/good_amount_add_btn"
+        android:src="@drawable/btn_plus"
+        android:layout_width="30dp"
+        android:scaleType="center"
+        android:layout_alignParentRight="true"
+        android:layout_height="30dp" />
+</RelativeLayout>
